@@ -1,0 +1,12 @@
+{
+  "name": "born-smooth",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "repository": "git@github.com:born-smooth/born-smooth.git",
+  "license": "MIT",
+  "packageManager": "yarn@4.5.1",
+  "workspaces": [
+    "packages/*"
+  ]
+}
