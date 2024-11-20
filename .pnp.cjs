@@ -41,9 +41,43 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/animate/",\
         "packageDependencies": [\
           ["@born-smooth/animate", "workspace:packages/animate"],\
+          ["@types/react", "npm:18.3.12"],\
+          ["@types/react-dom", "npm:18.3.1"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:0c8a969d363df6dcb30de157bbcb93207082298d693fe7b5c0490137af471e255bb311702ca58a5fdd754e58dc8616703dc8cdb895015c33b38e94f45ab16a61#npm:18.3.1"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@types/prop-types", [\
+      ["npm:15.7.13", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-prop-types-npm-15.7.13-ac81cbe352-10c0.zip/node_modules/@types/prop-types/",\
+        "packageDependencies": [\
+          ["@types/prop-types", "npm:15.7.13"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/react", [\
+      ["npm:18.3.12", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-react-npm-18.3.12-69c5fbaab9-10c0.zip/node_modules/@types/react/",\
+        "packageDependencies": [\
+          ["@types/react", "npm:18.3.12"],\
+          ["@types/prop-types", "npm:15.7.13"],\
+          ["csstype", "npm:3.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/react-dom", [\
+      ["npm:18.3.1", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-react-dom-npm-18.3.1-15935b4e84-10c0.zip/node_modules/@types/react-dom/",\
+        "packageDependencies": [\
+          ["@types/react-dom", "npm:18.3.1"],\
+          ["@types/react", "npm:18.3.12"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["born-smooth", [\
@@ -53,6 +87,78 @@ const RAW_RUNTIME_STATE =
           ["born-smooth", "workspace:."]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["csstype", [\
+      ["npm:3.1.3", {\
+        "packageLocation": "../../.yarn/berry/cache/csstype-npm-3.1.3-e9a1c85013-10c0.zip/node_modules/csstype/",\
+        "packageDependencies": [\
+          ["csstype", "npm:3.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["js-tokens", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/js-tokens-npm-4.0.0-0ac852e9e2-10c0.zip/node_modules/js-tokens/",\
+        "packageDependencies": [\
+          ["js-tokens", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["loose-envify", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "../../.yarn/berry/cache/loose-envify-npm-1.4.0-6307b72ccf-10c0.zip/node_modules/loose-envify/",\
+        "packageDependencies": [\
+          ["loose-envify", "npm:1.4.0"],\
+          ["js-tokens", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react", [\
+      ["npm:18.3.1", {\
+        "packageLocation": "../../.yarn/berry/cache/react-npm-18.3.1-af38f3c1ae-10c0.zip/node_modules/react/",\
+        "packageDependencies": [\
+          ["react", "npm:18.3.1"],\
+          ["loose-envify", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-dom", [\
+      ["npm:18.3.1", {\
+        "packageLocation": "../../.yarn/berry/cache/react-dom-npm-18.3.1-a805663f38-10c0.zip/node_modules/react-dom/",\
+        "packageDependencies": [\
+          ["react-dom", "npm:18.3.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:0c8a969d363df6dcb30de157bbcb93207082298d693fe7b5c0490137af471e255bb311702ca58a5fdd754e58dc8616703dc8cdb895015c33b38e94f45ab16a61#npm:18.3.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-0163b38f5f/3/.yarn/berry/cache/react-dom-npm-18.3.1-a805663f38-10c0.zip/node_modules/react-dom/",\
+        "packageDependencies": [\
+          ["react-dom", "virtual:0c8a969d363df6dcb30de157bbcb93207082298d693fe7b5c0490137af471e255bb311702ca58a5fdd754e58dc8616703dc8cdb895015c33b38e94f45ab16a61#npm:18.3.1"],\
+          ["@types/react", "npm:18.3.12"],\
+          ["loose-envify", "npm:1.4.0"],\
+          ["react", "npm:18.3.1"],\
+          ["scheduler", "npm:0.23.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["scheduler", [\
+      ["npm:0.23.2", {\
+        "packageLocation": "../../.yarn/berry/cache/scheduler-npm-0.23.2-6d1dd9c2b7-10c0.zip/node_modules/scheduler/",\
+        "packageDependencies": [\
+          ["scheduler", "npm:0.23.2"],\
+          ["loose-envify", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["typescript", [\
