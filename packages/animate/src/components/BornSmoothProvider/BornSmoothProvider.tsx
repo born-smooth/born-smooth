@@ -1,20 +1,14 @@
-import { createContext, useContext, ReactNode } from "react";
+import { createContext, useContext } from "react";
 
 interface BornSmoothContextValue {
-  // Add your context values here
+  // TODO: add your context values here
 }
 
-const BornSmoothContext = createContext<BornSmoothContextValue | undefined>(
-  undefined
-);
+const BornSmoothContext = createContext<BornSmoothContextValue>({});
 
-interface BornSmoothProviderProps {
-  children: ReactNode;
-}
-
-function BornSmoothProvider({ children }: BornSmoothProviderProps) {
+function BornSmoothProvider({ children }: { children: React.ReactNode }) {
   const value = {
-    // Add your context values here
+    // TODO: add context values here
   };
 
   return (
