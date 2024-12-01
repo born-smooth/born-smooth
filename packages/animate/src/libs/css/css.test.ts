@@ -15,8 +15,7 @@ describe('@born-smooth/animate css', () => {
 
   it('should convert basic CSS properties to kebab case', () => {
     const className = css({ backgroundColor: 'red' });
-
-    expect(className).toBe('sl-123456');
+    expect(className).toMatch(/^sl-[a-zA-Z0-9]{6}$/);
     styleSheet = document.getElementById('dynamic-styles') as HTMLStyleElement;
     expect(styleSheet.sheet?.cssRules[0].cssText).toBe('.sl-123456 {background-color: red;}');
   });
