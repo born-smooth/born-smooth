@@ -1,0 +1,8 @@
+{
+  "**/*.{ts,tsx}": [
+    "eslint --fix --config ../../eslint.config.js",
+    "prettier --write",
+    "jest --findRelatedTests --passWithNoTests"
+  ],
+  "*.{js,jsx,json,md}": ["prettier --write"]
+}

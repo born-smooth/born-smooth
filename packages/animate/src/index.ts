@@ -1,1 +1,2 @@
-console.log("animate");
+export * from './components';
+export * from './libs';

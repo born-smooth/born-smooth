@@ -1,12 +1,20 @@
-# Node modules
+# Dependencies
 node_modules/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # Build directories
 dist/
 build/
+lib/
 
-# TypeScript cache
+# TypeScript
 *.tsbuildinfo
+.tsc-cache
 
 # Logs
 logs
@@ -14,35 +22,43 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 
-# Dependency directories
-jspm_packages/
+# Testing
+coverage/
+.jest-cache
+__snapshots__/
 
 # IDE specific files
 .vscode/
 .idea/
+*.sublime-workspace
+*.sublime-project
+.settings/
+*.swp
+*~
 
-# MacOS specific files
+# OS specific files
 .DS_Store
+Thumbs.db
+.directory
 
 # Environment variables
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Coverage directory used by testing tools
-coverage/
+.env.*
+!.env.example
 
 # Temporary files
 *.tmp
 *.temp
+.cache/
+.temp/
 
-# Editor specific files
-*.swp
-*~
+# Package files
+*.tgz
+.npmrc
 
 # Miscellaneous
-*.sublime-workspace
-*.sublime-project
+.history/
+.eslintcache
+.stylelintcache
